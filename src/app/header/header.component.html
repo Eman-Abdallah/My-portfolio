@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg fixed-top py-0 text2 " id="navbar-example2" [ngClass]="{ scrolled: scrolled }" id="navbar">
+    <div class="container-lg px-0">
+        <a class="navbar-brand py-0" href="#home">
+
+            <img src="./assets/img//1.png" width="100px" height="75px" alt="">
+        </a>
+        <button class="navbar-toggler" (click)="collapsed.classList.toggle('clicked')" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars fa-2x"></i>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" #collapsed>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <input type="checkbox" id="change" (click)="changed()">
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="head-content" id="home">
+    <div class="overlay"></div>
+    <h1 class="text2  ">I <span class="txt-type" data-wait="3000" data-words='[ "Am Eman The Designer, Front-end Developer"]'></span></h1>
+    <p class=" text-white ">Specialize in responsive web page design </p>
+    <a href="#work" class="btn ">View My Work</a>
+</div>

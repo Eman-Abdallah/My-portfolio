@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Dosis";
+    src: url(../../../assets/font/Dosis/Dosis-VariableFont_wght.ttf);
+}
+
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background-color: #ffbc00 !important;
+    width: 14px;
+    height: 14px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #ffbc00 !important;
+}
+
+.dark {
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        background-color: rgb(160, 3, 233) !important;
+        width: 14px;
+        height: 14px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: rgb(160, 3, 233) !important;
+    }
+}
+
+@media(max-width:500px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+}

@@ -1,0 +1,35 @@
+.contact {
+    padding-top: 200px;
+    .title {
+        text-align: center;
+    }
+    form {
+        label {
+            padding: 10px;
+        }
+        input {
+            padding: 10px;
+        }
+        .btn {
+            border: 2px solid $main-color;
+            color: $main-color;
+            font-weight: bold;
+            &:hover {
+                background-color: $main-color;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 779px) {
+    .contact {
+        padding-top: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact {
+        padding-top: 500px;
+    }
+}

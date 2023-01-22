@@ -1,0 +1,100 @@
+$website-width: 1200px;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$violet-color: rgb(160, 3, 233);
+// set text color
+@function set-text-color($color) {
+    @if (lightness($color) > 50) {
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
+.lead {
+    font-size: 18px;
+}
+
+.dark {
+    .text {
+        color: $light-color;
+    }
+    .text2 {
+        color: $violet-color!important;
+    }
+    .text-white {
+        counter-reset: $light-color;
+    }
+    .back {
+        background-color: $violet-color;
+    }
+    .text-muted {
+        color: rgba($light-color, .7)!important;
+    }
+    .lead {
+        color: rgba($dark-color, .7)!important;
+    }
+    .about .dbtn {
+        &:hover {
+            color: $violet-color;
+            background-color: $light-color;
+        }
+    }
+    .scrolled {
+        background-color: rgba($violet-color, .5);
+        .nav-link {
+            color: $light-color!important;
+            &:hover {
+                border-bottom-color: $light-color;
+            }
+        }
+    }
+    .nav-link {
+        color: $light-color!important;
+        &:hover {
+            border-bottom-color: $light-color;
+        }
+    }
+    .nav-link.active {
+        border-color: $light-color;
+    }
+    .work .item {
+        background: $violet-color;
+        .item-text .btn:hover {
+            color: $violet-color!important;
+        }
+    }
+    .head-content {
+        .btn {
+            border: 2px solid $violet-color;
+            color: $light-color;
+            &:hover {
+                background-color: $violet-color;
+                color: white;
+            }
+        }
+    }
+    .contact .btn {
+        border: 2px solid $violet-color;
+        color: $violet-color;
+        &:hover {
+            background-color: $violet-color;
+            color: white;
+        }
+    }
+    .social {
+        i {
+            &:hover {
+                background-color: $light-color;
+                color: $violet-color;
+            }
+        }
+    }
+    .box:before {
+        border-top: 208px solid rgba(7, 0, 2, .3);
+        border-left: 140px solid rgba(240, 74, 126, .6);
+    }
+}

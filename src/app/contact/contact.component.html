@@ -13,35 +13,34 @@
                     <div class="row justify-content-center">
                         <div class="name col-sm-5">
                             <label for="name">Name</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" [(ngModel)]="name" [ngModelOptions]="{ standalone: true }" required />
                         </div>
                         <div class="email col-sm-5">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control">
+                            <input type="email" class="form-control" [(ngModel)]="email" [ngModelOptions]="{ standalone: true }" required />
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="project  col-sm-5">
+                        <div class="project col-sm-5">
                             <label for="project">Which project?</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" [(ngModel)]="project" [ngModelOptions]="{ standalone: true }" required />
                         </div>
                         <div class="interest col-sm-5">
                             <label for="interest">Your interest</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" [(ngModel)]="interest" [ngModelOptions]="{ standalone: true }" required />
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-sm-10">
                             <label for="details">Additional details</label>
-                            <textarea class="form-control" name="" id="" cols="20" rows="5"></textarea>
+                            <textarea class="form-control" name="" id="" cols="20" rows="5" [(ngModel)]="details" [ngModelOptions]="{ standalone: true }" required></textarea>
                         </div>
-
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btn-lg  my-3 ">Submit</button>
+                        <button type="submit" class="btn btn-lg my-3" (click)="textMe()">
+              Submit
+            </button>
                     </div>
-
-
                 </form>
             </div>
         </div>
